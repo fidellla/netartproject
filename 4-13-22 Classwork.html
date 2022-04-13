@@ -1,0 +1,38 @@
+<html>
+
+
+<body> 
+  <body style="background-color:powderblue;"> 
+  <button id= "firstButton" onclick="changeTextBlue()">BLUE</button>
+   <button id="secondButton" onclick="changeTextYellow()"> YELLOW</button>
+   <button id="hideButton" onclick="hideText()">HIDE</button>
+<button id="showButton" onclick="showText()">SHOW</button>
+
+<p id="displayText" onmouseover="changeText()" onmouseout = "changeBack()">COLOR</p>
+
+<script> 
+ function changeTextBlue(){
+
+document.getElementById("displayText").style.color ="blue";
+ }
+
+ function changeTextYellow(){
+  document.getElementById("displayText").style.color = "yellow"
+ }
+function hideText(){
+  document.getElementById("displayText").style.visibility = "hidden"
+}
+function showText(){
+  document.getElementById("displayText").style.visibility ="visible";
+}
+function changeText(){
+  document.getElementById("displayText").innerHTML = "SHAPE";
+}
+function changeBack(){ 
+  document.getElementById("displayText").innerHTML = "COLOR";
+}
+</script>
+
+  <body> 
+
+  </html> 
